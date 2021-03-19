@@ -1,12 +1,18 @@
 {
-    "name": "laravel/laravel",
+    "name": "dark/drakon",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Proyecto de bilioteca virtual",
     "keywords": [
         "framework",
         "laravel"
     ],
-    "license": "MIT",
+    "license": "ISC",
+    "authors": [
+        {
+            "name": "Gilver Dk",
+            "email": "dark.and.knight.555@gmail.com"
+        }
+    ],
     "require": {
         "php": "^7.3|^8.0",
         "fideloper/proxy": "^4.4",
