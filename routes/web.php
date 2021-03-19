@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\bibliotecaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,14 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('biblioteca', function () {
-    return "¡Bienvenido a la Fikiteca!";
-});
+Route::get('biblioteca', [bibliotecaController::class, 'index']);
 
-Route::get('biblioteca/create', function () {
-    return "Ingrese los datos para una busqueda personalizada: ";
-});
+Route::get('biblioteca/create', [bibliotecaController::class, 'create']);
 
-Route::get('biblioteca/{seccion}', function ($seccion) {
-    return "Bienvenido a nuestra seccion de: $seccion";
-});
+Route::get('biblioteca/{seccion}', [bibliotecaController::class, 'show']);
